@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edtOperation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:height="50dp"
+                android:background="@null"
+                android:gravity="right|center"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/edtOperation"
+                app:layout_constraintTop_toBottomOf="@+id/edtOperation" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnCount="8"
+            android:columnOrderPreserved="false"
+            android:rowCount="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btnSeven"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="7"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnEight"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="8"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnNine"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="9"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="÷"
+                android:textColor="@color/colorOrange"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="CE"
+                android:textColor="@color/colorOrange"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnSin"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="sin"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnCos"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="cos"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnTan"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="tan"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnFour"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="4"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnFive"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="5"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnSix"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="6"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnTimes"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="×"
+                android:textColor="@color/colorOrange"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnMod"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="%"
+                android:textColor="@color/colorOrange"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnLn"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="ln"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnLog"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="log"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnOver"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="xʸ"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnOne"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnTwo"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="2"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnThree"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="-"
+                android:textColor="@color/colorOrange"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnPi"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="π"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnE"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="e"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnFactorial"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="x!"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnDot"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text=","
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnZero"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:drawableStart="@drawable/icons8_clear_symbol_30px"
+                android:drawableTint="@color/colorOrange"
+                android:onClick="buttonsOnClick"
+                android:paddingStart="25dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="+"
+                android:textColor="@color/colorOrange"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:backgroundTint="@color/colorOrange"
+                android:onClick="buttonsOnClick"
+                android:text="="
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnOpenParantez"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="("
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnCloseParantez"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text=")"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnSquare"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:background="@drawable/btn_back"
+                android:onClick="buttonsOnClick"
+                android:text="√x"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
